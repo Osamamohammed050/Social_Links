@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
 
   // 🌟 دالة فتح ملف الـ CV المخصص على الويب
   Future<void> _openCV() async {
-    final Uri url = Uri.parse('assets/files/CV.pdf');
+    final Uri url = Uri.parse('assets/assets/files/CV.pdf');
     if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
       throw Exception('Could not launch CV');
     }
