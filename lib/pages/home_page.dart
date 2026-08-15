@@ -88,7 +88,7 @@ class _HomePageState extends State<HomePage> {
         Theme.of(context).textTheme.bodyLarge?.color ?? AppColors.textPrimary;
     return TextButton(
       onPressed: onTap,
-      style: TextButton.styleFrom(foregroundColor: navColor.withOpacity(0.86)),
+      style: TextButton.styleFrom(foregroundColor: navColor.withValues(alpha: 0.86)),
       child: Text(label, style: TextStyle(fontSize: fontSize)),
     );
   }
@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
     return AppBar(
       backgroundColor:
           Theme.of(context).appBarTheme.backgroundColor ??
-          Colors.black.withOpacity(0.36),
+          Colors.black.withValues(alpha: 0.36),
       elevation: 0,
       centerTitle: false,
       titleSpacing: ResponsiveHelper.getHorizontalSpacing(width),
@@ -199,10 +199,10 @@ class _HomePageState extends State<HomePage> {
       key: _homeKey,
       padding: sectionPadding,
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.surface.withOpacity(0.78),
+        color: Theme.of(context).colorScheme.surface.withValues(alpha: 0.78),
         borderRadius: BorderRadius.circular(borderRadius),
         border: Border.all(
-          color: Theme.of(context).dividerColor.withOpacity(0.76),
+          color: Theme.of(context).dividerColor.withValues(alpha: 0.76),
         ),
       ),
       child: Column(
@@ -275,10 +275,10 @@ class _HomePageState extends State<HomePage> {
       width: double.infinity,
       padding: sectionPadding,
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.surface.withOpacity(0.82),
+        color: Theme.of(context).colorScheme.surface.withValues(alpha: 0.82),
         borderRadius: BorderRadius.circular(borderRadius),
         border: Border.all(
-          color: Theme.of(context).dividerColor.withOpacity(0.78),
+          color: Theme.of(context).dividerColor.withValues(alpha: 0.78),
         )
       ),
       child: Column(
@@ -355,7 +355,7 @@ class _HomePageState extends State<HomePage> {
                 color: AppColors.accent,
                 backgroundColor: Theme.of(
                   context,
-                ).colorScheme.surface.withOpacity(0.2),
+                ).colorScheme.surface.withValues(alpha: 0.2),
                 minHeight: 3,
               ),
               Expanded(

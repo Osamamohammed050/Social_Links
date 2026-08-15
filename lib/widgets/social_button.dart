@@ -51,14 +51,14 @@ class _SocialButtonState extends State<SocialButton> {
           curve: Curves.easeOut,
           transform: Matrix4.identity()..scale(_hovering ? 1.03 : 1.0),
           decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.surface.withOpacity(0.88),
+            color: Theme.of(context).colorScheme.surface.withValues(alpha: 0.88),
             borderRadius: BorderRadius.circular(borderRadius),
             border: Border.all(
-              color: Theme.of(context).dividerColor.withOpacity(0.8),
+              color: Theme.of(context).dividerColor.withValues(alpha: 0.8),
             ),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(_hovering ? 0.22 : 0.12),
+                color: Colors.black.withValues(alpha: _hovering ? 0.22 : 0.12),
                 blurRadius: _hovering ? 26 : 16,
                 offset: const Offset(0, 12),
               ),
@@ -75,7 +75,7 @@ class _SocialButtonState extends State<SocialButton> {
               height: 40,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: widget.link.color.withOpacity(0.15),
+                color: widget.link.color.withValues(alpha: 0.15),
               ),
               child: Icon(widget.link.icon, color: widget.link.color, size: 18),
             ),

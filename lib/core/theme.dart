@@ -100,7 +100,7 @@ class AppTheme {
       ),
       bodyLarge: GoogleFonts.inter(color: colors.onSurface, fontSize: 16),
       bodyMedium: GoogleFonts.inter(
-        color: colors.onSurface.withOpacity(0.78),
+        color: colors.onSurface.withValues(alpha: 0.78),
         fontSize: 15,
       ),
       labelLarge: GoogleFonts.inter(

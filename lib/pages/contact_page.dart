@@ -121,10 +121,10 @@ class ContactPage extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Theme.of(
                         context,
-                      ).colorScheme.surface.withOpacity(0.9),
+                      ).colorScheme.surface.withValues(alpha: 0.9),
                       borderRadius: BorderRadius.circular(borderRadius),
                       border: Border.all(
-                        color: Theme.of(context).dividerColor.withOpacity(0.8),
+                        color: Theme.of(context).dividerColor.withValues(alpha: 0.8),
                       ),
                     ),
                     child: Column(
@@ -171,7 +171,7 @@ class ContactPage extends StatelessWidget {
                                   ),
                                   backgroundColor: Theme.of(
                                     context,
-                                  ).colorScheme.surface.withOpacity(0.8),
+                                  ).colorScheme.surface.withValues(alpha: 0.8),
                                   side: BorderSide(
                                     color: Theme.of(context).dividerColor,
                                   ),

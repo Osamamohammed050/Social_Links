@@ -67,11 +67,11 @@ class _ContactInfoCardState extends State<ContactInfoCard> {
           padding: padding,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(borderRadius),
-            border: Border.all(color: widget.item.color.withOpacity(0.24)),
-            color: Theme.of(context).colorScheme.surface.withOpacity(0.9),
+            border: Border.all(color: widget.item.color.withValues(alpha: 0.24)),
+            color: Theme.of(context).colorScheme.surface.withValues(alpha: 0.9),
             boxShadow: [
               BoxShadow(
-                color: widget.item.color.withOpacity(_hovering ? 0.18 : 0.08),
+                color: widget.item.color.withValues(alpha: _hovering ? 0.18 : 0.08),
                 blurRadius: _hovering ? 24 : 14,
                 offset: const Offset(0, 12),
               ),
@@ -109,7 +109,7 @@ class _ContactInfoCardState extends State<ContactInfoCard> {
               height: 40,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: widget.item.color.withOpacity(0.12),
+                color: widget.item.color.withValues(alpha: 0.12),
               ),
               child: Icon(widget.item.icon, color: widget.item.color, size: 18),
             ),
@@ -182,7 +182,7 @@ class _ContactInfoCardState extends State<ContactInfoCard> {
           height: 46,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            color: widget.item.color.withOpacity(0.12),
+            color: widget.item.color.withValues(alpha: 0.12),
           ),
           child: Icon(widget.item.icon, color: widget.item.color, size: 20),
         ),

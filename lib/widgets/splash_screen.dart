@@ -31,14 +31,14 @@ class SplashScreen extends StatelessWidget {
                   gradient: LinearGradient(
                     colors: [
                       AppColors.accent,
-                      AppColors.accent.withOpacity(0.65),
+                      AppColors.accent.withValues(alpha: 0.65),
                     ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: AppColors.accent.withOpacity(0.25),
+                      color: AppColors.accent.withValues(alpha: 0.25),
                       blurRadius: 28,
                       offset: const Offset(0, 18),
                     ),
