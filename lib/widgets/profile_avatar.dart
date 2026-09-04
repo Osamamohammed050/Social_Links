@@ -60,7 +60,7 @@ class ProfileAvatar extends StatelessWidget {
             child: Center(
               child: ClipOval(
                 child: Image.asset(
-                  'assets/Badla.jpg',
+                  'assets/photo.jpeg',
                   fit: BoxFit.cover,
                   width: imageSize,
                   height: imageSize,
