@@ -91,7 +91,7 @@ class _SocialButtonState extends State<SocialButton> {
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
             ),
-            trailing: const Icon(
+            trailing: const FaIcon(
               FontAwesomeIcons.arrowRight,
               size: 14,
               color: AppColors.accent,
