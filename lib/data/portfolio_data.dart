@@ -6,7 +6,7 @@ import '../models/contact_item.dart';
 IconData _iconData(FaIconData icon) => IconData(
       icon.codePoint,
       fontFamily: icon.fontFamily,
-      fontPackage: icon.fontPackage,
+      fontPackage: icon.fontPackage
     );
 
 List<ContactItem> contactItems = <ContactItem>[
