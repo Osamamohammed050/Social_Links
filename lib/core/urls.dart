@@ -16,4 +16,5 @@ class AppUrls {
   static const email = 'mailto:ous17102006@gmail.com';
   static const saraha = 'https://sarhne.sarahah.pro/osamaous';
   static const cv = ''; // Add a valid URL when ready.
-}
+} 
+
